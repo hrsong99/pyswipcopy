@@ -588,7 +588,6 @@ PL_VERSION_VM		=6	# VM signature
 PL_VERSION_BUILT_IN	=7	# Built-in predicate signature
 
 try:
-    PL_version = _lib.PL_version
     PL_version = _lib.PL_version_info
     PL_version.argtypes = [c_int]
     PL_version.restype = c_uint
